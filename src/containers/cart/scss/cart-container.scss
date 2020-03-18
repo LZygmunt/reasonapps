@@ -1,0 +1,57 @@
+@import "../../../assets/scss/mediaqueries";
+
+#cart-container {
+  position: fixed;
+  top: 6em;
+  right: 0;
+  height: 0;
+  overflow-Y: auto;
+  width: 18em;
+  transition: all ease-in-out .5s;
+
+  &.show {
+    height: 30em;
+  }
+
+  #summary {
+    width: 15em;
+    height: 1.3em;
+    padding: 1em 1em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+  }
+}
+
+@include breakpoints( "medium" ) {
+  #cart-container {
+    width: 100%;
+    background-color: whitesmoke;
+    justify-content: space-around;
+    display: grid;
+    grid-template-areas: 'a a a';
+    grid-template-rows: 2em repeat(99999, 6em);
+
+    &.show{
+      height: 100%;
+    }
+
+    #summary {
+      grid-column: 1/a-end;
+    }
+  }
+}
+
+@include breakpoints( "small" ) {
+  #cart-container{
+    grid-template-areas: 'a a';
+  }
+}
+
+@include breakpoints( "verySmall" ) {
+  #cart-container{
+    grid-template-areas: 'a';
+    justify-content: center;
+  }
+}

@@ -1,0 +1,78 @@
+@import "../../../assets/scss/mediaqueries";
+
+#products-container {
+  position: relative;
+  top: 6em;
+  margin: 0 auto;
+  padding: 0 1em;
+  width: 70%;
+  display: grid;
+  grid-template: 'a a a a';
+  grid-row-gap: 2em;
+  justify-items: center;
+  align-items: center;
+
+  &::before, &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    grid-column: 1/5;
+  }
+}
+
+@include breakpoints( "veryBig" ) {
+  #products-container {
+    margin: unset;
+    margin-left: 4%;
+    width: 76%;
+  }
+}
+
+@include breakpoints( "big" ) {
+  #products-container {
+    width: 71%;
+    grid-template: 'a a a';
+
+    &::after, &::before {
+      grid-column: 1/4;
+    }
+  }
+}
+
+@include breakpoints( "medium" ) {
+  #products-container {
+    width: 100%;
+    padding: unset;
+    margin: unset;
+    grid-template: 'a a a';
+    justify-content: space-around;
+
+    &::after, &::before {
+      grid-column: 1/4;
+    }
+
+    &.block-scroll{
+      overflow: hidden;
+      height: 0;
+    }
+  }
+}
+
+@include breakpoints( "small" ) {
+  #products-container{
+    grid-template: 'a a';
+    &::after, &::before {
+      grid-column: 1/3;
+    }
+  }
+}
+
+@include breakpoints( "verySmall" ) {
+  #products-container{
+    grid-template: 'a';
+    &::after, &::before {
+      grid-column: 1/2;
+    }
+  }
+}

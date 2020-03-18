@@ -1,0 +1,75 @@
+@import "../../../assets/scss/mediaqueries";
+
+#header {
+  width: 100%;
+  height: 6em;
+  background-color: white;
+  box-shadow: 0 -13px 7px -7px black inset;
+  position: fixed;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  #logo {
+    margin: 0;
+    line-height: 1.75;
+    height: 100%;
+    font-size: 48px;
+    width: 80%;
+    padding-left: 1em;
+  }
+
+  #cart {
+    margin-right: 1em;
+    font-size: 36px;
+  }
+
+  #search {
+    width: 20em;
+    display: flex;
+    justify-content: flex-end;
+
+    span {
+      font-size: 36px;
+      margin: 0 .2em 0 .3em;
+    }
+
+    input {
+      width: 0;
+      padding: .75em 0;
+      border: 0;
+      border-radius: 15px;
+      font-size: 16px;
+      transition: all ease-in-out .5s;
+      background-color: transparent;
+      color: black;
+
+      &.show {
+        width: 11.5em;
+        padding: 0.75em;
+        border: 1px solid #ccc;
+      }
+    }
+  }
+}
+
+@include breakpoints( "big" ) {
+  #header {
+    #search input.show{
+      width: 17em;
+    }
+  }
+}
+
+@include breakpoints( "small" ) {
+  #header{
+    #logo{
+      line-height: 2.75;
+      font-size: 36px;
+    }
+    #search input.show{
+      width: 6.5em;
+    }
+  }
+}
