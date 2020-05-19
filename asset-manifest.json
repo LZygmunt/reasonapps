@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/reasonapps/static/css/main.1013019c.chunk.css",
+    "main.js": "/reasonapps/static/js/main.af952862.chunk.js",
+    "main.js.map": "/reasonapps/static/js/main.af952862.chunk.js.map",
+    "runtime-main.js": "/reasonapps/static/js/runtime-main.f9528439.js",
+    "runtime-main.js.map": "/reasonapps/static/js/runtime-main.f9528439.js.map",
+    "static/js/2.71698c3c.chunk.js": "/reasonapps/static/js/2.71698c3c.chunk.js",
+    "static/js/2.71698c3c.chunk.js.map": "/reasonapps/static/js/2.71698c3c.chunk.js.map",
+    "index.html": "/reasonapps/index.html",
+    "precache-manifest.4e3fdd057aa36c9642fe737d55c96b7e.js": "/reasonapps/precache-manifest.4e3fdd057aa36c9642fe737d55c96b7e.js",
+    "service-worker.js": "/reasonapps/service-worker.js",
+    "static/css/main.1013019c.chunk.css.map": "/reasonapps/static/css/main.1013019c.chunk.css.map",
+    "static/js/2.71698c3c.chunk.js.LICENSE.txt": "/reasonapps/static/js/2.71698c3c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f9528439.js",
+    "static/js/2.71698c3c.chunk.js",
+    "static/css/main.1013019c.chunk.css",
+    "static/js/main.af952862.chunk.js"
+  ]
+}
